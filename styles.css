@@ -1,0 +1,30 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 512px;
+    max-height: 512px;
+}
+
+.container div {
+    border: 1px solid black;
+    flex-basis: 32px;
+    height: 32px;
+
+}
+
+.container .hover {
+    background-color: black;
+}
