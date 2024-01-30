@@ -22,7 +22,7 @@ body{
     padding: 0 32px;
 }
 
-button {
+.custom {
     display: inline-block;
     padding: 10px 20px;
     font-size: 32px;
@@ -37,14 +37,45 @@ button {
     transition: color 0.3s, background-color 0.3s;
 }
 
-button:hover {
+.reset, .black, .color {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #ce2b62;
+    color: #8f1b47;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap:16px
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom:hover {
     color: #ffffff;
     background-color: #3498db;
   }
 
+.reset:hover, .black:hover, .color:hover {
+    color: #ffffff;
+    background-color: #ce2b62;
+}
+
 .customize {
     display: flex;
-    padding: 50px 0;
+    padding: 32px 0;
     width:960px;
     justify-content: space-between;
     background-color: black;
