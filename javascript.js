@@ -12,7 +12,7 @@ let hoverDivs = document.querySelectorAll(".square");
 
 hoverDivs.forEach ((hoverDiv) => {
 hoverDiv.addEventListener ('mouseover', () => {
-    hoverDiv.style = 'background-color:black;height: 60px; width:60px;';
+    hoverDiv.style = `background-color:rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)});height: 60px; width:60px;`;
     });
 });
 
@@ -39,7 +39,7 @@ customButton.addEventListener('click', () => {
 
 hoverDivs.forEach ((hoverDiv) => {
 hoverDiv.addEventListener ('mouseover', () => {
-    hoverDiv.style = `background-color:black;height: ${sqrt}px; width:${sqrt}px;`;
+    hoverDiv.style = `background-color:rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)});height: ${sqrt}px; width:${sqrt}px;`;
     });
 });
 })
